@@ -3,5 +3,5 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 module.exports = {
-  publicPath: '/Personal_Website/dist/'
+  publicPath: '/Personal_Website/'
 }

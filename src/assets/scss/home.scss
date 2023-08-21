@@ -35,6 +35,7 @@ div.container{
                 }
                 i{
                     font-size: 25px;
+                    cursor: pointer;
                 }
             }
             a.resume{
@@ -53,6 +54,10 @@ div.container{
                 i{
                     margin-left:12px;
                 }
+            }
+            div.contact_info{
+                text-align: center;
+                margin: 20px 0;
             }
         }
         div.right_info{
