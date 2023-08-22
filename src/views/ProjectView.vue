@@ -5,6 +5,7 @@
       <div class="tag_group">
         <div class="tag" @click="switchPage(1)">星火兒童認養協會</div>
         <div class="tag" @click="switchPage(2)">PetsQ</div>
+        <div class="tag" @click="switchPage(3)">ToDo-list</div>
       </div>
       <transition-group>
         <section v-if="show == 1">
@@ -256,6 +257,29 @@
             </p>
             <div class="pic">
               <img src="../../public/image/PetQ.png" alt="PetQ">
+            </div>
+          </section>
+        </section>
+      </transition-group>
+      <transition-group>
+        <section v-if="show == 3">
+          <section class="info">
+            <h2>ToDo-list</h2>
+            <div class="link">
+              <a href="https://github.com/njs-kayla/todo-list"><i class="fa-brands fa-github"></i></a>
+              <a href="https://njs-kayla.github.io/todo-list/" 
+              target="_blank"  class="demo">
+                <span>查看網頁</span>
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+            <p>練習 JavaScript 的小程式，並使用 localStorage 儲存資料。
+            </p>
+            <p>
+              使用技術：HTML、CSS、JavaScript。
+            </p>
+            <div class="pic">
+              <img src="../../public/image/todo-list.png" alt="PetQ">
             </div>
           </section>
         </section>
