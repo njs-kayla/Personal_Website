@@ -11,7 +11,7 @@
           <i class="fa-solid fa-envelope" @click="showEmail"></i>
         </div>
         <transition>
-          <div class="contact_info">
+          <div v-if="contact_info" class="contact_info">
             {{ contact_info }}
           </div>
         </transition>
@@ -29,7 +29,7 @@
         <div class="link" @click="scrollToView">
           <router-link class="item" :class="getButtonStyle('/')" to="/">簡介</router-link>
           <router-link class="item" :class="getButtonStyle('/project')" to="project">作品集</router-link>
-          <router-link class="item" :class="getButtonStyle('/skill')" to="skill">技能</router-link>
+          <!-- <router-link class="item" :class="getButtonStyle('/skill')" to="skill">技能</router-link> -->
         </div>
       </div>
     </div>
@@ -82,7 +82,8 @@ export default {
 @import "src/assets/scss/home";
   div.link{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 20px;
     .item{
         margin-top: 10px;
         display: inline-block;
