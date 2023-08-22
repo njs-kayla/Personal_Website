@@ -3,9 +3,9 @@
     <h1>作品集</h1>
     <div class="main_body">
       <div class="tag_group">
-        <div class="tag" @click="switchPage(1)">星火兒童認養協會</div>
-        <div class="tag" @click="switchPage(2)">PetsQ</div>
-        <div class="tag" @click="switchPage(3)">ToDo-list</div>
+        <div class="tag" :style="switchClass(1)"  @click="switchPage(1)">星火兒童認養協會</div>
+        <div class="tag" :style="switchClass(2)"  @click="switchPage(2)">PetsQ</div>
+        <div class="tag" :style="switchClass(3)"  @click="switchPage(3)">ToDo-list</div>
       </div>
       <transition-group>
         <section v-if="show == 1">
@@ -299,6 +299,12 @@ export default {
     };
   },
   methods: {
+    switchClass(page) {
+      return{
+        backgroundColor: this.show == page ?  "#1D3D6C" : "#fff",
+        color: this.show == page ?  "#fff" : "#1D3D6C"
+      } 
+    },
     switchPage(page) {
       this.show = page;
     },
