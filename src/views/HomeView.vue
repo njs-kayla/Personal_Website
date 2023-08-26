@@ -15,7 +15,7 @@
             {{ contact_info }}
           </div>
         </transition>
-        <a href="https://drive.google.com/file/d/1G-GrV5iRD-gn93qxFaqn3MAYM1TChKsO/view?usp=drive_link" 
+        <a href="https://drive.google.com/file/d/1fK_JEK-pJ0vRtl3lmYGRy27LX32ELJ1h/view?usp=drive_link" 
         target="_blank"  class="resume">
           <span>查看履歷</span>
           <i class="fa-solid fa-up-right-from-square"></i>
